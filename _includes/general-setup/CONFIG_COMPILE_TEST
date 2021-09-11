@@ -1,0 +1,5 @@
+Symbol : CONFIG_COMPILE_TEST
+
+Choice : Excluded
+
+Info   : Test Do you intend to compile drivers which are meant for a different platform to compile-test them ? Most probably not unless you are a developer. 

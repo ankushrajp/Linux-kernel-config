@@ -1,0 +1,5 @@
+Symbol : CONFIG_MEMBARRIER 
+
+Choice : Built-in(*)
+
+Info   : Automatically included by rseq syscall

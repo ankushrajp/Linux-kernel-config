@@ -1,0 +1,245 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+<body>
+<div class="header">
+  <h1 class="fab fa-korvue">ernel Config</h1></br>
+  <u>5.13.12</u>
+</div>
+
+<div class="sidebar">
+  <button class="link" onclick="openContent(event, 'intro')" id="defaultOpen">Intro</button>
+  <button class="link" onclick="openContent(event, 'generalsetup')">General Setup</button>
+  <button class="link" onclick="openContent(event, 'processortype')">Processor type and features</button>
+  <button class="link" onclick="openContent(event, 'powermanagement')">Emable the block layer</button>
+  <button class="link" onclick="openContent(event, 'busoptions')">Processor type and features</button>
+  <button class="link" onclick="openContent(event, 'binaryemulations')">Power management and ACPI options</button>
+  <button class="link" onclick="openContent(event, 'firmwaredrivers')">Bus options</button>
+  <button class="link" onclick="openContent(event, 'virtualization')">Executable File formats / Emulations</button>
+  <button class="link" onclick="openContent(event, 'generalarchoptions')">Networking Support</button>
+  <button class="link" onclick="openContent(event, 'loadablemodule')">Enable loadable module support</button>
+  <button class="link" onclick="openContent(event, 'blocklayer')">Enable Block layer</button>
+  <button class="link" onclick="openContent(event, 'ioschedulers')">IO Schedulers</button>
+  <button class="link" onclick="openContent(event, 'execfileformats')">Executable File formats</button>
+  <button class="link" onclick="openContent(event, 'memorymanagement')">Memory management options</button>
+  <button class="link" onclick="openContent(event, 'networkingsupport')">Networking support</button>
+  <button class="link" onclick="openContent(event, 'devicedrivers')">Device Drivers</button>
+  <button class="link" onclick="openContent(event, 'filesystems')">File Systems</button>
+  <button class="link" onclick="openContent(event, 'securityoptions')">Security options</button>
+  <button class="link" onclick="openContent(event, 'crypto')">Cryptographic API</button>
+  <button class="link" onclick="openContent(event, 'libroutines')">Library routines</button>
+  <button class="link" onclick="openContent(event, 'kernelhacking')">Kernel Hacking</button>
+  
+  <h3 style="color:#e6e6e6;font-size:2rem;font-weight:400;letter-spacing: -1px;padding-left: 1rem;">MORE</h3>
+  <p class="fab fa-github" style="color:#e6e6e6;font-size:20px;font-weight:300;padding-left: 1rem;line-height:1;margin-left:20px"> Github Repo</p><br>
+  <p class="fas fa-file" style="color:#e6e6e6;font-size:20px;font-weight:300;padding-left: 1rem;line-height:1;margin-left:20px"> Articles</p>
+</div>
+
+<div id="intro" class="content">
+  <h2><u>Intro</u></h2>
+
+  {% include intro.html %}
+
+  <button class="accordion" onclick="openEvent(event)">Sample Config</button>
+  <div class="panel">
+  <pre>
+  <code id="code">
+Symbol : <div class="info">Symbol that represent the particular option in final config file like (CONFIG_XXX)</div>
+
+Choice : <div class="info">Whether the option is enabled or disabled or what value is put if it requires a string.</div>
+
+Info   : It may contain information explaining why a particular choice was made and/or links containing more information regarding the option.
+  </code>
+  </pre>
+  </div>
+
+</div>
+
+
+<div id="generalsetup" class="content">
+  <h2><u>General Setup</u></h2>
+
+{% include accordion.html name="Compile drivers which will not load" file="/general-setup/CONFIG_COMPILE_TEST" %}
+{% include accordion.html name="Local version append" file="/general-setup/CONFIG_LOCALVERSION" %}
+{% include accordion.html name="Automatically append version information to version string" file="/general-setup/CONFIG_LOCALVERSION_AUTO" %}
+{% include accordion.html name="Build ID Salt" file="/general-setup/CONFIG_BUILD_SALT" %}
+{% include accordion.html name="Kernel Compression mode" file="/general-setup/KERNEL_COMPRESSION_MODE" %}
+{% include accordion.html name="Default init path" file="/general-setup/CONFIG_DEFAULT_INIT" %}
+{% include accordion.html name="Default hostname" file="/general-setup/CONFIG_DEFAULT_HOSTNAME" %}
+{% include accordion.html name="Support for paging of anonymous memory (swap)" file="/general-setup/CONFIG_SWAP" %}
+{% include accordion.html name="Default init path" file="/general-setup/CONFIG_DEFAULT_INIT" %}
+{% include accordion.html name="System V IPC" file="/general-setup/CONFIG_SYSVIPC" %}
+{% include accordion.html name="POSIX Message Queues" file="/general-setup/CONFIG_POSIX_MQUEUE" %}
+{% include accordion.html name="Enable process_vm_readv/writev syscalls" file="/general-setup/CONFIG_CROSS_MEMORY_ATTACH" %}
+{% include accordion.html name="uselib syscall" file="/general-setup/CONFIG_USELIB" %}
+{% include accordion.html name="Auditing support" file="/general-setup/CONFIG_AUDIT" %}
+
+<button class="accordion" onclick="openEvent(event)">Sample Config</button>
+<div class="panel panel_level0">
+{% include accordion1.html name="Timer tick handling" file="/general-setup/TIMERS_SUBSYSTEM/TIMER_TICK_HANDLING" %}
+{% include accordion1.html name="Old dynticks config" file="/general-setup/TIMERS_SUBSYSTEM/CONFIG_NO_HZ" %}
+{% include accordion1.html name="High Resolution Timer support" file="/general-setup/TIMERS_SUBSYSTEM/CONFIG_HIGH_RES_TIMERS" %}
+</div>
+
+{% include accordion.html name="BPF Subsystem" file="/general-setup/BPF_SUBSYSTEM" %}
+{% include accordion.html name="Preemption Model" file="/general-setup/PREEMPTION_MODEL" %}
+
+<button class="accordion" onclick="openEvent(event)">Sample Config</button>
+<div class="panel panel_level0">
+{% include accordion1.html name="Cputime Accounting" file="/general-setup/CPU_TASK_ACCOUNTING/CONFIG_TICK_CPU_ACCOUNTING" %}
+{% include accordion1.html name="Fine granularity task level IRQ time accounting" file="/general-setup/CPU_TASK_ACCOUNTING/CONFIG_IRQ_TIME_ACCOUNTING" %}
+{% include accordion1.html name="Export task/process statistics through netlink" file="/general-setup/CPU_TASK_ACCOUNTING/CONFIG_TASKSTATS" %}
+{% include accordion1.html name="Pressure stall information" file="/general-setup/CPU_TASK_ACCOUNTING/CONFIG_PSI" %}
+</div>
+
+{% include accordion.html name="CPU Isolation" file="/general-setup/CONFIG_CPU_ISOLATION" %}
+{% include accordion.html name="RCU Subsystem" file="/general-setup/RCU_SUBSYSTEM" %}
+{% include accordion.html name="Kernel .config support" file="/general-setup/CONFIG_IKCONFIG" %}
+{% include accordion.html name="Kernel log buffer" file="/general-setup/CONFIG_LOG_BUF_SHIFT" %}
+{% include accordion.html name="CPU kernel log buffer size contribution" file="/general-setup/CONFIG_LOG_CPU_MAX_BUF_SHIFT" %}
+{% include accordion.html name="Temporary per-CPU printk log buffer size" file="/general-setup/CONFIG_PRINTK_SAFE_LOG_BUF_SHIFT" %}
+{% include accordion.html name="Control Group support" file="/general-setup/CONFIG_CGROUPS" %}
+{% include accordion.html name="Namespaces Support" file="/general-setup/CONFIG_NAMESPACES" %}
+{% include accordion.html name="Checkpoint/restore support" file="/general-setup/CONFIG_CHECKPOINT_RESTORE" %}
+{% include accordion.html name="Enable deprecated sysfs features to support old userspace tools" file="/general-setup/CONFIG_SYSFS_DEPRECATED" %}
+{% include accordion.html name="Kernel-userspace relay support" file="/general-setup/CONFIG_RELAY" %}
+{% include accordion.html name="Initial RAM filesystem and RAM disk support" file="/general-setup/CONFIG_BLK_DEV_INITRD" %}
+{% include accordion.html name="Boot config support" file="/general-setup/CONFIG_BOOT_CONFIG" %}
+{% include accordion.html name="Compiler optimization level" file="/general-setup/COMPILER_OPTIMIZATION" %}
+{% include single_block.html name="Configure standard kernel features (expert users)" file="/general-setup/STANDARD_KERNEL_FEATURES" %}
+{% include accordion.html name="CPU Isolation" file="/general-setup/CONFIG_CPU_ISOLATION" %}
+{% include accordion.html name="Enable membarrier() sys call" file="/general-setup/CONFIG_MEMBARRIER" %}
+{% include accordion.html name="Load all symbols for debugging/ksymoops" file="/general-setup/CONFIG_KALLSYMS" %}
+{% include accordion.html name="Enable userfaultfd() sys call" file="/general-setup/CONFIG_USERFAULTFD" %}
+{% include accordion.html name="Enable kcmp() sys call" file="/general-setup/CONFIG_KCMP" %}
+{% include accordion.html name="Enable debugging of rseq() sys call" file="/general-setup/CONFIG_DEBUG_RSEQ" %}
+{% include accordion.html name="Embedded system" file="/general-setup/CONFIG_EMBEDDED" %}
+{% include accordion.html name="PC/104 Support" file="/general-setup/CONFIG_PC104" %}
+{% include accordion.html name="Kernel performance events and counters" file="/general-setup/CONFIG_PERF_EVENTS" %}
+{% include accordion.html name="Enable VM event counters for /proc/vmstat" file="/general-setup/CONFIG_VM_EVENT_COUNTERS" %}
+{% include accordion.html name="Enable SLUB debugging support" file="/general-setup/CONFIG_SLUB_DEBUG" %}
+{% include accordion.html name="Disable HEAP randomization" file="/general-setup/CONFIG_COMPAT_BRK" %}
+{% include accordion.html name="Allow slab caches to be merged" file="/general-setup/CONFIG_SLAB_MERGE_DEFAULT" %}
+{% include accordion.html name="Randomize slab freelist" file="/general-setup/CONFIG_SLAB_FREELIST_RANDOM" %}
+{% include accordion.html name="Harden slab freelist metadata" file="/general-setup/CONFIG_SLAB_FREELIST_HARDENED" %}
+{% include accordion.html name="Page allocator randomization" file="/general-setup/CONFIG_SHUFFLE_PAGE_ALLOCATOR" %}
+{% include accordion.html name="SLUB per cpu partial cache" file="/general-setup/CONFIG_SLUB_CPU_PARTIAL" %}
+{% include accordion.html name="Profiling support" file="/general-setup/CONFIG_PROFILING" %}
+</div>
+
+<div id="processortype" class="content">
+  <h2><u>Processor type and features</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="powermanagement" class="content">
+  <h2><u>Power Management and ACPI options</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="busoptions" class="content">
+  <h2><u>Bus options (PCI etc.)</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+
+<div id="binaryemulations" class="content">
+  <h2><u>Binary Emulations</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="firmwaredrivers" class="content">
+  <h2><u>Firmware Drivers</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="virtualization" class="content">
+  <h2><u>Virtualization</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="generalarchoptions" class="content">
+  <h2><u>General Architecture-dependent options</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="loadablemodule" class="content">
+  <h2><u>Enable loadable module support</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="blocklayer" class="content">
+  <h2><u>Enable the block layer</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="ioschedulers" class="content">
+  <h2><u>IO Schedulers</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="execfileformats" class="content">
+  <h2><u>Executable file formats</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="memorymanagement" class="content">
+  <h2><u>Memory Management options</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="networkingsupport" class="content">
+  <h2><u>Networking Support</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="devicedrivers" class="content">
+  <h2><u>Device Drivers</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="filesystems" class="content">
+  <h2><u>File Systems</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="securityoptions" class="content">
+  <h2><u>Security options</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="crypto" class="content">
+  <h2><u>Cryptographic API</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="libroutines" class="content">
+  <h2><u>Library routines</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<div id="kernelhacking" class="content">
+  <h2><u>Kernel Hacking</u></h2>
+  <p>Content Coming Soon</p>
+</div>
+
+<script src="https://kit.fontawesome.com/df405cd3e9.js" crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/js/script.js"></script>
+</body>
+
+
+</html> 

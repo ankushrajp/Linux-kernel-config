@@ -1,0 +1,7 @@
+Symbol : CONFIG_WATCH_QUEUE
+
+Choice : Built-in(*)
+
+Info   : Following link lists out possible use cases. Sounds like a good thing.
+<a id="href" href="http://lkml.iu.edu/hypermail/linux/kernel/1911.3/01766.html">Link</a>
+

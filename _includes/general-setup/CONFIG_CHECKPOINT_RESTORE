@@ -1,0 +1,5 @@
+Symbol : CONFIG_CHECKPOINT_RESTORE 
+
+Choice : Excluded
+
+Info   : As per official help, Say N if Unsure. 

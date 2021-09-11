@@ -1,0 +1,10 @@
+Symbol : CONFIG_SLAB, CONFIG_SLUB, CONFIG_SLOB 
+
+Choice : CONFIG_SLUB (Unqueued Allocator)
+
+Info   : SLAB is old.
+SLUB is next-generation (new) and fixes several deficiencies of SLAB and is recommended for most systems.
+SLOB is for embedded systems.
+
+Links
+    - <a id="href" href="https://stackoverflow.com/questions/15470560/what-to-choose-between-slab-and-slub-allocator-in-linux-kernel">Link</a>

@@ -1,0 +1,5 @@
+Symbol : CONFIG_BUILD_SALT
+
+Choice : Default(blank)
+
+Info   : It is used by compiler to add a unique BUILD ID to resulting kernel binary which is of no use to most users.

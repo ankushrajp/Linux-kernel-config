@@ -1,0 +1,5 @@
+Symbol : CONFIG_SLUB_DEBUG 
+
+Choice : Excluded
+
+Info   : Needed for debugging purposes

@@ -1,0 +1,11 @@
+Symbol : CONFIG_PREEMPT_NONE, CONFIG_PREEMPT_VOLUNTARY, CONFIG_PREEMPT 
+
+Choice : Voluntary kernel preemption (CONFIG_PREEMPT_VOLUNTARY)
+
+Info   : Preemptive kernel can be interrupted in the middle of executing code. It means sys-calls do not block the entire system.
+If a process takes a long time to finish doesn't mean kernel cannot do anything else in that time.
+Voluntary Kernel Preemption is recommended for desktop systems but if you use case requires latency in milliseconds, Preemtible kernel(CONFIG_PREEMPT) option should be selected.
+
+Links 
+    - <a id="href" href="https://stackoverflow.com/questions/817059/what-is-preemption-what-is-a-preemtible-kernel-what-is-it-good-for">Link</a>
+

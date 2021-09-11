@@ -1,0 +1,5 @@
+Symbol : CONFIG_LOCALVERSION
+
+Choice : "_custom"
+
+Info   : Will you be compiling/using multiple kernels on your system ? If yes, you can enter a string here which will get appended to the end of kernel name (shown during boot selection and "uname -r" command) for easy differentiating.

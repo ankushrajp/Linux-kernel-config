@@ -1,0 +1,6 @@
+Symbol : CONFIG_DEFAULT_INIT
+
+Choice : Default(blank)
+
+Info   : If you are sure you'll not be using the kernel with Linux distributions that have different init systems, you can specify the init system path here.
+Otherwise it can be left blank and kernel will automatically find the init system.

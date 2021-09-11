@@ -1,0 +1,6 @@
+Symbol : CONFIG_KCMP 
+
+Choice : Built-in(*)
+
+Info   : Automatically included by other options. 
+Can be safely excluded if not forcibily included by other options.

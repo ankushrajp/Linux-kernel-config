@@ -1,0 +1,7 @@
+Symbol : CONFIG_PRINTK_SAFE_LOG_BUF_SHIFT 
+
+Choice : 12
+
+Info   : You can safely set the value of this option to (12).
+The value (12) is the lowest possible (while staying convenient) value that provides good balance between keeping your kernel ring buffer from being overwrited constantly while keeping your kernel's size to a minimum.
+If the output of dmesg is still being truncated (which is highly unlikely) then consider increasing the value of this option.

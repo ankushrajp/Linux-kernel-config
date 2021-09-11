@@ -1,0 +1,9 @@
+Symbol : CONFIG_IRQ_TIME_ACCOUNTING 
+
+Choice : Excluded
+
+Info   : If you disable the option, cpu time taken by interrupts won't be accounted for. Most users won't be looking for this info but if you are interested in interrupt cpu usage, this option should be included.
+
+Links 
+    - <a id="href" href="https://tanelpoder.com/posts/linux-hiding-interrupt-cpu-usage/">Link 1</a>
+      <a id="href" href="https://unix.stackexchange.com/questions/242835/is-top-accounting-for-kernel-interrupts">Link 2</a>

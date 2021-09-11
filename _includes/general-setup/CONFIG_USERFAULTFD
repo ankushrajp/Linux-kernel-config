@@ -1,0 +1,10 @@
+Symbol : CONFIG_USERFAULTFD 
+
+Choice : Excluded
+
+Info   : It enables interception and handling of page (memory) faults using userspace application.
+You can enable it if you have a use for it. Follow below links for better understanding of Page faults in linux.
+
+Links
+    - <a id="href" href="https://scoutapm.com/blog/understanding-page-faults-and-memory-swap-in-outs-when-should-you-worry">Link 1</a>
+      <a id="href" href="https://man7.org/linux/man-pages/man2/userfaultfd.2.html">Link 2</a>

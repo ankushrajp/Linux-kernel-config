@@ -1,0 +1,5 @@
+Symbol : CONFIG_DEFAULT_HOSTNAME
+
+Choice : Default(blank)
+
+Info   : It's recommended if your system's default hostname was set here (rather than relying on the hostname boot service) if you're building this kernel for your current system. You know what they say the less services you have at boot time, the faster your system boots.

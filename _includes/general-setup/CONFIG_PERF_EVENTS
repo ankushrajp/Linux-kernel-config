@@ -1,0 +1,5 @@
+Symbol : CONFIG_PERF_EVENTS
+
+Choice : Built-in(*) 
+
+Info   : Automatically included by kernel. Debug option (CONFIG_DEBUG_PERF_USE_VMALLOC) next to it is excluded.

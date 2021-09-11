@@ -1,0 +1,5 @@
+Symbol : CONFIG_SHUFFLE_PAGE_ALLOCATOR 
+
+Choice : Built-in(*)
+
+Info   :

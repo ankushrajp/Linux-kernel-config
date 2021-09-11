@@ -1,0 +1,14 @@
+Symbol : CONFIG_NAMESPACES 
+
+Choice : Excluded
+
+Info   : Include network namespace if you are using systemd.
+
+Include PID, NETWORK, IPC namespaces if you are using gentoo.
+
+If you are using Linux containers such as Docker, all options should be enabled.
+
+Otherwise all can be excluded. To know more about namespaces and their uses, follow the link below- 
+
+Links
+    - <a id="href" href="https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces">Link</a>

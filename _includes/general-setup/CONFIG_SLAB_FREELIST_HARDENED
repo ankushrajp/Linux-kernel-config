@@ -1,0 +1,5 @@
+Symbol : CONFIG_SLAB_FREELIST_HARDENED 
+
+Choice : Excluded
+
+Info   : 

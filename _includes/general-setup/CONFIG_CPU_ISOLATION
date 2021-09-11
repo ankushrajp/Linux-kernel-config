@@ -1,0 +1,10 @@
+Symbol : CONFIG_CPU_ISOLATION 
+
+Choice : Excluded
+
+Info   : CPU allocation to tasks is handled by kernel scheduler and kernel decided which task should run on which cpu. User has no say in it.
+But if you want isolate cpu(s) from kernel scheduler and dedicate that cpu(s) to a particular task so that it runs without any disturbance, this option should be included otherwise it can be safely excluded.
+Follow link for more info.
+
+Links 
+    - <a id="href" href="https://unix.stackexchange.com/questions/326579/how-to-ensure-exclusive-cpu-availability-for-a-running-process">Link</a>

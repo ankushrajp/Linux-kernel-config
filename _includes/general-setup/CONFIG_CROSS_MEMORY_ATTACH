@@ -1,0 +1,6 @@
+Symbol : CONFIG_CROSS_MEMORY_ATTACH 
+
+Choice : Built-in(*)
+
+Info   : You can exclude them if you are sure no application you use uses these system calls. Since I am not sure, i've included them.
+

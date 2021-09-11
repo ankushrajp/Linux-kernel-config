@@ -1,0 +1,5 @@
+Symbol : CONFIG_TICK_CPU_ACCOUNTING 
+
+Choice : Simple tick based CPU Accounting
+
+Info   : This is the only useful option. Other option is suitable if you are working on development of full dynticks subsystem, which, if you are reading this, most probably you are not.

@@ -1,0 +1,6 @@
+Symbol : CONFIG_IKCONFIG 
+
+Choice : Excluded
+
+Info   : It enables the kernel to store the configuration file inside kernel which you can access via /proc/config.gz.
+Since we are compiling the kernel ourselves and will have a text config file saved, it can be excluded.

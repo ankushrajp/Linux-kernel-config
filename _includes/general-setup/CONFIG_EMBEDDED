@@ -1,0 +1,5 @@
+Symbol : CONFIG_EMBEDDED 
+
+Choice : Excluded
+
+Info   : This should be enabled when compiling the kernel for an embedded system.

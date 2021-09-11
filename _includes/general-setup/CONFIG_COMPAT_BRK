@@ -1,0 +1,5 @@
+Symbol : CONFIG_COMPAT_BRK 
+
+Choice : Built-in(*)
+
+Info   : Include this option to disable heap randomization and lower system overhead.

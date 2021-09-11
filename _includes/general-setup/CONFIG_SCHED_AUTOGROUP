@@ -1,0 +1,10 @@
+Symbol : CONFIG_SCHED_AUTOGROUP 
+
+Choice : Built-in(*)
+
+Info   : It optimizes kernel scheduler for common desktop workloads by automatically creating task groups which isolates aggresive CPU burners (like build jobs) from desktop apps.
+If you like to set priority/nice levels of you task yourself, exclude this option as it may interfere with them.
+
+Links
+    - <a id="href" href="https://www.reddit.com/r/linux/comments/d7hx2c/why_nice_levels_are_a_placebo_and_have_been_for_a/">Link 1</a>
+      <a id="href" href="https://forums.gentoo.org/viewtopic-t-1060648-highlight-.html">Link 2</a>

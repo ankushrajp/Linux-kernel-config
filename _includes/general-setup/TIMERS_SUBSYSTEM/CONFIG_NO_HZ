@@ -1,0 +1,6 @@
+Symbol : CONFIG_NO_HZ 
+
+Choice : Excluded
+
+Info   : This option is only included in kernel for old systems for backward compatibility. We have already selected CONFIG_NO_HZ_IDLE. 
+This can be safely ignored.

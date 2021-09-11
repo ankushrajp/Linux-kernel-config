@@ -1,0 +1,15 @@
+Symbol : CONFIG_KERNEL_(LZ4 or ZSTD or LZO....) depending on selection
+
+Choice : LZ4
+
+Info   : Among the options given, select an algorithm to be used for Kernel compression.
+
+Gzip provides one of the highest compression but lowest decompression speed.
+LZ4 provides lowest compression but fastest decompression speed. 
+ZSTD provides compression comparable to Gzip with much faster decompression rate.
+
+For most modern drives, the size of uncompressed linux kernel is already small enough to not matter much for file loading time. Decompression speed is more important. 
+Hence, LZ4 is selected.
+
+If you are on a system with very low disk space want to save every MB possible, ZSTD is recommended.
+If you compiling for an embedded system and saving space is your only goal, XZ is recommended.

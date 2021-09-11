@@ -1,0 +1,5 @@
+Symbol : CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE, CONFIG_CC_OPTIMIZE_FOR_SIZE 
+
+Choice : Optimize for performance (-O2)
+  
+Info   : It is recommended to use default option unless you are on a highly space constrained system.

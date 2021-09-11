@@ -1,0 +1,5 @@
+Symbol : CONFIG_BOOT_CONFIG 
+
+Choice : Excluded
+
+Info   : It allows to pass a config file to kernel cmdline when booting.

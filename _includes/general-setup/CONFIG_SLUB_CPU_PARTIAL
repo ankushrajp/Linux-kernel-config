@@ -1,0 +1,5 @@
+Symbol : CONFIG_SLUB_CPU_PARTIAL 
+
+Choice : Built-in(*)
+
+Info   : It is recommended as it adds a performance boots.

@@ -1,0 +1,5 @@
+Symbol : CONFIG_IKHEADERS 
+
+Choice : Excluded
+
+Info   : If you need access to in-kernel headers that are generated during build process, enable it otherwise it is safe to exclude it.

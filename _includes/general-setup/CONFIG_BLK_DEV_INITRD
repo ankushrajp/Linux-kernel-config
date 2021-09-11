@@ -1,0 +1,6 @@
+Symbol : CONFIG_BLK_DEV_INITRD 
+
+Choice : Excluded
+
+Info   : As we will be compiling are own kernel specific to our hardware which will reduce config options and modules significantly, we can bake all neccessary options to boot directly into kernel without worrying about kernel size. Hence no need for initramfs/initrd.
+It may also make booting faster.

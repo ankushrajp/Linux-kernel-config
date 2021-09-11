@@ -1,0 +1,74 @@
+There are a lot of options under this menu with not much to elaborate on every option, so I am going to cover all in a single block.
+
+
+Symbol : Multiple users, groups and capabilities support (CONFIG_MULTIUSER)
+Choice : Built-in(*)
+Info   :<div class="info">As name suggests, it enables support for non-root users and groups which is required by most users.</div>
+
+Symbol : sgetmask/ssetmask syscalls support (COMFIG_SGETMASK_SYSCALL)
+Choice : Excluded
+Info   : <div class="info">These calls are obsolete.</div>
+
+Symbol : Sysfs syscall support (CONFIG_SYSFS_SYSCALL)
+Choice : Excluded
+Info   : Obsolete
+
+Symbol : open by fhandle syscalls (CONFIG_FHANDLE)
+Choice : Built-in(*)
+Info   : <div class="info">Important syscall. Mandatory for systemd as mentioned by gentoo wiki.</div>
+
+Symbol : Posix Clocks & timers (CONFIG_POSIX_TIMERS)
+Choice : Excluded
+Info   : <div class="info">With this option disabled, lot of time related syscalls won't be available but they are of little use to general users. Remaining options after disabling this should cover vast majority of use cases.
+It can be safely disabled if you are sure no application you use requires it.</div>
+    
+Symbol : Enable support for printk (CONFIG_PRINTK)
+Choice : Built-in(*)
+Info   : <div class="info">It is highly recommended to enable this option for dmesg to work and diagnose system problems using kernel messages.</div>
+
+Symbol : BUG() support (CONFIG_BUG)
+Choice : Built-in(*)
+Info   : <div class="info">It enables support for BUG and WARN calls which can report numerous fatal conditions.</div>
+
+Symbol : Enable PC-Speaker support (CONFIG_PCSPKR_PLATFORM)
+Choice : Excluded
+Info   : <div class="info">It disables internal PC-Speaker (which produces those annoying beeps at startup or specific keystrokes). It has nothing to do with normal sound experience. It can be safely excluded.</div>
+
+Symbol : Enable full-szed data structures for core (CONFIG_BASE_FULL)
+Choice : Built-in(*)
+Info   : <div class="info">It is recommended to include it as it boosts the performance unless you are on a highly space constrained system and want to save space at the cost of reduced performance.</div>
+
+Symbol : Enable futex support (CONFIG_FUTEX)
+Choice : Built-in(*)
+Info   : <div class="info">It is required by all glibc-based applications.</div>
+
+Symbol : Enable eventpoll support (CONFIG_EPOLL)
+Choice : Built-in(*)
+Info   : <div class="info">Mandatory option for systemd as mentioned in gentoo wiki.</div>
+
+Symbol : Enable signalfd() system call (CONFIG_SIGNALFD)
+Choice : Built-in(*)
+Info   : <div class="info">Mandatory option for systemd as mentioned in gentoo wiki.</div>
+
+Symbol : Enable timerfd() system call (CONFIG_TIMERFD)
+Choice : Built-in(*)
+Info   : <div class="info">Mandatory option for systemd as mentioned in gentoo wiki.</div>
+
+Symbol : Enable eventfd() system call (CONFIG_EVENTFD)
+Choice : Built-in(*)
+
+Symbol : Use full shmem filesystem (CONFIG_SHMEM)
+Choice : Excluded
+Info   : <div class="info">It is an internal filesystem used to manage shared memory. It is recommended to include this if you are using swap. Otherwise you can safely exclude it for small desktop systems.</div>
+    
+Symbol : Enable AIO support (CONFIG_AIO)
+Choice : Excluded
+Info   : <div class="info">You can include it if you are using high performance threaded applications which make use of POSIX asynchrounous I/O.</div>
+
+Symbol : Enable IO uring support (CONFIG_IO_URING)
+Choice : Built-in(*)
+Info   : <a id="href" href="https://unixism.net/loti/what_is_io_uring.html">https://unixism.net/loti/what_is_io_uring.html</a>
+
+Symbol : Enable madvise/fadvise syscalls (CONFIG_ADVISE_SYSCALLS)
+Choice : Excluded
+Info   : <div class="info">You can safely exclude it if these calls are not required by any of your applications (chrome needs them).</div>

@@ -1,0 +1,8 @@
+Symbol : CONFIG_RSEQ 
+
+Choice : Built-in(*)
+
+Info   : The restartable sequences system call allows for faster performance in per-CPU data updates from user-space for items like incrementing per-CPU counters, modifying data protected by per-CPU spinlocks, reading/writing per-CPU ring buffers, and similar operations.
+
+Links 
+    - <a id="href" href="https://www.phoronix.com/scan.php?page=news_item&px=Restartable-Sequences-Speed">Link</a>

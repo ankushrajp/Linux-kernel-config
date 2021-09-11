@@ -1,0 +1,5 @@
+Symbol : CONFIG_KALLSYMS 
+
+Choice : Excluded
+
+Info   : Mainly needed for debugging purposes

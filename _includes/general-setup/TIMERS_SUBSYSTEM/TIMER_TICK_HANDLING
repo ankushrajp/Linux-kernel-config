@@ -1,0 +1,10 @@
+Symbol : CONFIG_HZ_PERIODIC, CONFIG_NO_HZ_IDLE, CONFIG_NO_HZ_FULL 
+
+Choice : Idle dynticks system (CONFIG_NO_HZ_IDLE)
+
+Info   : It is recommended to choose Idle dynticks system if you use a laptop and power saving is a concern.
+If performance is your only goal, Periodic timer ticks should be selected.
+
+Links 
+    - <a id="href" href="https://elinux.org/Kernel_Timer_Systems">Link</a>
+

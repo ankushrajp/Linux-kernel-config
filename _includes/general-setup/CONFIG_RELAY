@@ -1,0 +1,5 @@
+Symbol : CONFIG_RELAY 
+
+Choice : Excluded
+
+Info   : Mostly needed for debugging purposes to efficiently relay large amount of information from kernel to userspace, for example, via debugfs.

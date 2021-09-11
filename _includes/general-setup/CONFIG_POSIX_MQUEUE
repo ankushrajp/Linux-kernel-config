@@ -1,0 +1,7 @@
+Symbol : CONFIG_POSIX_MQUEUE
+
+Choice : Excluded
+
+Info   : System V message queues are widely used and not POSIX Message Queues. 
+You can safely exclude this option if you won't be compiling and running programs written for Solaris that make use of its POSIX queues.
+

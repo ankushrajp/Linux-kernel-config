@@ -1,0 +1,5 @@
+Symbol : CONFIG_DEBUG_RSEQ 
+
+Choice : Excluded
+
+Info   : For debugging purposes

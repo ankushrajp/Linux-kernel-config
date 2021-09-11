@@ -1,0 +1,6 @@
+Symbol : CONFIG_SYSVIPC
+
+Choice : Built-in(*)
+
+Info   : It enables a suite of library functions and systems calls neccessary for proper functioning of system. 
+It lets a user process syncronize itself with other processes, send and recive messages from other processes, share memory with other processes.

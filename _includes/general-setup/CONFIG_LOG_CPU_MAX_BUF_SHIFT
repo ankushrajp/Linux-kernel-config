@@ -1,0 +1,7 @@
+Symbol : CONFIG_LOG_CPU_MAX_BUF_SHIFT 
+
+Choice : 14
+
+Info   : You can safely set the value of this option to (14).
+The value (14) is the lowest possible (while staying convenient) value that provides good balance between keeping your kernel ring buffer from being overwrited constantly while keeping your kernel's size to a minimum.
+If the output of dmesg is still being truncated (which is highly unlikely) then consider increasing the value of this option.

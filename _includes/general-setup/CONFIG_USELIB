@@ -1,0 +1,5 @@
+Symbol : CONFIG_USELIB 
+
+Choice : Excluded
+
+Info   : Modern systems do not require this sys call as they use glibc which do not support uselib syscall. It is included in kernel for backwards compatibility with old systems.

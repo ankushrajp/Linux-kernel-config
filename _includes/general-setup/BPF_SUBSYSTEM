@@ -1,0 +1,11 @@
+Symbol : CONFIG_BPF_SYSCALL, CONFIG_BPF_JIT 
+
+Choice : Both excluded
+
+Info   : If you will be using systemd or eBPF programs, include bpf() system call option as recommended by gentoo wiki.
+Otherwise you can safely exclude it.
+Most people do not require it.
+
+Links
+    - <a id="href" href="https://www.linuxjournal.com/content/bpf-observability-getting-started-quickly">Link</a>
+

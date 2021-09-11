@@ -1,0 +1,5 @@
+Symbol : CONFIG_AUDIT 
+
+Choice : Excluded
+
+Info   : It can be excluded if you do not plan to use SElinux or similar security systems.

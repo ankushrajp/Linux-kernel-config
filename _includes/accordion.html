@@ -1,0 +1,8 @@
+<button class="accordion" onclick="openEvent(event)">{{ include.name }}</button>
+<div class="panel">
+<pre>
+<code id="code">
+{% include {{ include.file }} %}  
+</code>
+</pre>
+</div>

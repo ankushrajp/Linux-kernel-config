@@ -1,0 +1,9 @@
+Symbol : CONFIG_BSD_PROCESS_ACCT 
+
+Choice : Excluded
+
+Info   : Follow the link below to read more about it and if you have use for it, enable it otherwise its safe to excluded.
+
+Links
+    - <a id="href" href="https://www.linuxjournal.com/article/6144">Link</a>
+

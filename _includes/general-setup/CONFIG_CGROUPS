@@ -1,0 +1,8 @@
+Symbol : CONFIG_CGROUPS 
+
+Choice : Only options that are automatically selected (due to dependency of other options), rest excluded
+
+Info   : If you use systemd based distributions, enable support for eBPF programs attached to cgroups (after enabling bpf() sys call). Also, include cgroups if you are using gentoo linux as it is required by portage.
+If you are using Docker, refer to gentoo wiki for all cgroup options to enable.
+Other options can be safely excluded if you have no use for them.
+Follow the link to know more about cgroups and wheter you need them or not - <a id="href" href="https://www.redhat.com/sysadmin/cgroups-part-one">Link</a>

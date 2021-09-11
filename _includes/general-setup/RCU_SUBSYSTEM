@@ -1,0 +1,10 @@
+Symbol :  CONFIG_RCU_EXPERT
+
+Choice : Excluded
+
+Info   : Read-Copy update (RCU) is a synchronization mechanism. If you need to make expert-level adjustments to RCU, which most probably you don't, you can enable it otherwise disable it.
+Follow link to know more about RCU.
+
+Links
+    - <a id="href" href="https://lwn.net/Articles/262464/">Link 1</a>
+    - <a id="href" href="http://www.rdrop.com/users/paulmck/RCU/whatisRCU.html">Link 2</a>

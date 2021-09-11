@@ -1,0 +1,5 @@
+Symbol : CONFIG_PC104 
+
+Choice : Excluded
+
+Info   : You can safely exclude this option if you're not building this kernel for an embedded system with a PC/104 bus.

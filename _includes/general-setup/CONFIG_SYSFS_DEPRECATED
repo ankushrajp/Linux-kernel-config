@@ -1,0 +1,5 @@
+Symbol : CONFIG_SYSFS_DEPRECATED 
+
+Choice : Excluded
+
+Info   : You need to include this only if you are using this (new) kernel on an old out-of-date distribution.

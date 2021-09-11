@@ -1,0 +1,5 @@
+Symbol : CONFIG_TASKSTATS 
+
+Choice : Excluded
+
+Info   : If you require to export selected statistics through generic netlink interface, you can enable this. If you don't know what it means, you don't need it. You can safely exclude it.

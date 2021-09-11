@@ -1,0 +1,11 @@
+Symbol : CONFIG_HIGH_RES_TIMERS 
+
+Choice : Included
+
+Info   : It is good to include this option if your hardware supports it. It allows system to wakeup and process data at more accurate intervals(although at a cost of increased latency). 
+You can exclude it if your hardware doesn't support it or you are sure no application you use uses it.
+
+To check whether hardware supports it or not, you can run below commands from a distribution kernel.
+cat /proc/timer_list | grep -m 1 -i .resolution - if value is 1 nsecs, it is supported.
+cat /sys/devices/system/clocksource/clocksource0/available_clocksource - if it displays hpet, it is supported.
+

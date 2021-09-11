@@ -1,0 +1,6 @@
+Symbol : CONFIG_SWAP
+
+Choice : Excluded
+
+Info   : If you usually find yourself low on RAM while multitasking or compile heavy softwares (or are a gentoo user) which can fail due to not sufficient RAM, swap is recommended.
+Otherwise it can be safely excluded.

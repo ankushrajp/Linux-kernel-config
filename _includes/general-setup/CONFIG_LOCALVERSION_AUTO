@@ -1,0 +1,9 @@
+Symbol : CONFIG_LOCALVERSION_AUTO
+
+Choice : Excluded
+
+Info   : If you downloaded the source code using git, this option will append, if a git-based tree is found, a unique version control tag in form of "-gxxxxxx". It may be used to differentiate between git-based and not git kernel sources.
+For now, CONFIG_LOCALVERSION is enough for our uses.
+
+Links 
+    - <a id="href" href="https://unix.stackexchange.com/questions/194129/linux-kernel-version-suffix-config-localversion">Link 1</a>

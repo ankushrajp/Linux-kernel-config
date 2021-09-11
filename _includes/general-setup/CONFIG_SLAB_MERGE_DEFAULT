@@ -1,0 +1,5 @@
+Symbol : CONFIG_SLAB_MERGE_DEFAULT 
+
+Choice : Built-in(*)
+
+Info   : It allows merging of similar SLABS together to reduce overhead.
