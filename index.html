@@ -74,7 +74,7 @@ Info   : It may contain information explaining why a particular choice was made 
   <h2><u>General Setup</u></h2>
 
 {% include accordion.html name="Compile drivers which will not load" file="/general-setup/CONFIG_COMPILE_TEST" %}
-{% include accordion.html name="Local version append" file="/general-setup/CONFIG_LOCALVERSION" %}
+{% include accordion.html name="Local version - append to kernel release" file="/general-setup/CONFIG_LOCALVERSION" %}
 {% include accordion.html name="Automatically append version information to version string" file="/general-setup/CONFIG_LOCALVERSION_AUTO" %}
 {% include accordion.html name="Build ID Salt" file="/general-setup/CONFIG_BUILD_SALT" %}
 {% include accordion.html name="Kernel Compression mode" file="/general-setup/KERNEL_COMPRESSION_MODE" %}
@@ -88,7 +88,7 @@ Info   : It may contain information explaining why a particular choice was made 
 {% include accordion.html name="uselib syscall" file="/general-setup/CONFIG_USELIB" %}
 {% include accordion.html name="Auditing support" file="/general-setup/CONFIG_AUDIT" %}
 
-<button class="accordion" onclick="openEvent(event)">Sample Config</button>
+<button class="accordion" onclick="openEvent(event)">Timer Subsystem</button>
 <div class="panel panel_level0">
 {% include accordion1.html name="Timer tick handling" file="/general-setup/TIMERS_SUBSYSTEM/TIMER_TICK_HANDLING" %}
 {% include accordion1.html name="Old dynticks config" file="/general-setup/TIMERS_SUBSYSTEM/CONFIG_NO_HZ" %}
@@ -98,7 +98,7 @@ Info   : It may contain information explaining why a particular choice was made 
 {% include accordion.html name="BPF Subsystem" file="/general-setup/BPF_SUBSYSTEM" %}
 {% include accordion.html name="Preemption Model" file="/general-setup/PREEMPTION_MODEL" %}
 
-<button class="accordion" onclick="openEvent(event)">Sample Config</button>
+<button class="accordion" onclick="openEvent(event)">CPU/Task time and stats accounting</button>
 <div class="panel panel_level0">
 {% include accordion1.html name="Cputime Accounting" file="/general-setup/CPU_TASK_ACCOUNTING/CONFIG_TICK_CPU_ACCOUNTING" %}
 {% include accordion1.html name="Fine granularity task level IRQ time accounting" file="/general-setup/CPU_TASK_ACCOUNTING/CONFIG_IRQ_TIME_ACCOUNTING" %}
